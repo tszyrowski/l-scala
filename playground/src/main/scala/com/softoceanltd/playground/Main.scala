@@ -11,6 +11,8 @@ object Main {
   def main(args: Array[String]): Unit = {
     println("─" * 100)
 
+
+    println(args.length)
     println("hello world ")
     println(Main)
     println(
@@ -67,5 +69,9 @@ object Main {
     println(mix)
 
     println("─" * 100)
+
+    // functions can be define with nonalpha numeric chars
+    def *(first: Int, second: Int) = first * second
+    println(*(2, 4))
   }
 }
